@@ -1,5 +1,5 @@
 # AutoGrad_with_.NET
-Meme thing i did to learn C# for am upcoming school project
+Meme thing i did to learn C# for an upcoming school project
 
 # Dumping buffers to use in python :
 ![Screenshot](SeeSharpNN.png)
