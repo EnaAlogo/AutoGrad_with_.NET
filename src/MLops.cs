@@ -294,7 +294,7 @@ namespace AutoGrad
                     dB = dB!.sum( i , dtype: dB.dtype , keepdims: true);
                 dB = Funcs.Squeeze(dB);
             }
-            return (Parents[0]!.RequiresGrad ? np.dot(gradient , w!.T) : null,
+            return (Parents[0]!.RequiresGrad ? Funcs.TensorDot(gradient, w!.T , new[] {-1,0}) : null,
                     Parents[1]!.RequiresGrad ? Funcs.TensorDot( x! , gradient , new int[][] { axes, axes }) : null ,
                     dB );
         }
